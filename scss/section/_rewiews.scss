@@ -4,6 +4,13 @@
     position: relative;
 }
 
+.rewiew__list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .rewiew{
     flex-basis: 25%;
     background-repeat: no-repeat;
@@ -11,44 +18,15 @@
     background-size: cover;
     padding: 0;
     height: 50%;
-
+    filter: grayscale(1);
+    
     @include tablets{
         height: 25%;
         flex-basis: 50%;
+        width: 50%;
     }
 }
 
-.rewiew__1{
-    background-image: url('../img/content/rewiew__1.png');
-}
-
-.rewiew__2{
-    background-image: url('../img/content/rewiew__2.png');
-}
-
-.rewiew__3{
-    background-image: url('../img/content/rewiew__3.png');
-}
-
-.rewiew__4{
-    background-image: url('../img/content/rewiew__4.png');
-}
-
-.rewiew__5{
-    background-image: url('../img/content/rewiew__5.png');
-}
-
-.rewiew__6{
-    background-image: url('../img/content/rewiew__6.png');
-}
-
-.rewiew__7{
-    background-image: url('../img/content/rewiew__7.png');
-}
-
-.rewiew__8{
-    background-image: url('../img/content/rewiew__8.png');
-}
 
 .rewiew__content{
     height: 100%;

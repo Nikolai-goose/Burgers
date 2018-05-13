@@ -20,10 +20,18 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+
+  @include tablets{
+    padding-top: 0;
+  }
 }
 
 .header__logo {
   margin-right: auto;
+}
+
+.logo__img{
+  max-width: rem(94px);
 }
 
 .header__menu{
@@ -91,16 +99,26 @@
   display: flex;
   
   @include tablets{
-    flex-basis: 70%;
+    flex-basis: auto;
   }
   @include phones{
 
   }
 }
 
+.hero__img{
+  @include tablets{
+    max-width: 80%;
+    display: inline;
+    margin-bottom: rem(20px);
+  }
+}
+
 .hero__description {
   flex-direction: column;
   justify-content: center;
+  
+  
 }
 
 .section__title {
@@ -111,6 +129,11 @@
   line-height: 1.42;
   margin: 0;
   padding-top: 60px;
+  
+  @include tablets{
+    padding-top: 0;
+    font-size: rem(54px);
+  }
 }
 
 .hero__description-text {
@@ -118,6 +141,10 @@
   font-size: rem(65px);
   font-weight: 400;
   color: #fff;
+
+  @include tablets{
+    font-size: rem(54px);
+  }
 }
 
 .hero__arrow {

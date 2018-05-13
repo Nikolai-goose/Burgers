@@ -36,6 +36,20 @@
     display: block;
 	float: left;
     position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0 , 0, 0, 0.7);
+    }
+
+    @include phones{
+        width: (50px);
+    }
 }
 
 .menu__accordeon__trigger-title {
@@ -59,11 +73,27 @@
 	overflow: hidden;
 }
 
+.menu__accordeon-active{
+    width: rem(520px);
+
+    @include tablets{
+        width: rem(240px);
+    }
+
+    @include phones{
+        width: rem(200px);
+    }
+
+}
+
 .menu__accordeon__text {
     width: 100%;
     font-weight: 300;
     color: white;
 	font-size: rem(14px);	
-	padding: rem(60px) rem(30px);
-    display: none;
+    padding: rem(60px) rem(30px);
+    
+    @include tablets{
+        padding: rem(12px);
+    }
 }

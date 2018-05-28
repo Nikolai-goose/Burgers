@@ -70,7 +70,8 @@
 	float: left;
 	background: rgba(#2f3234, .93);
 	width: 0;
-	overflow: hidden;
+    overflow: hidden;
+    transition: all 0.3s;
 }
 
 .menu__accordeon-active{
@@ -92,8 +93,14 @@
     color: white;
 	font-size: rem(14px);	
     padding: rem(60px) rem(30px);
-    
+    opacity: 0;
+    transition: all 0.4s;
+
     @include tablets{
         padding: rem(12px);
     }
+}
+
+.menu__accordeon-active .menu__accordeon__text{
+    opacity: 1;
 }

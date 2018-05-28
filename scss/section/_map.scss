@@ -1,10 +1,44 @@
 .map{
-    background-image: url('../img/bg/map-bg.png');
+    //background-image: url('../img/bg/map-bg.png');
     background-size: cover;
     text-align: center;
     background-position: center center;
     display: flex;
     position: relative;
+}
+
+.map-wrapper{
+    height: 100%;
+    min-height: 620px;
+    width: 100%;
+}
+
+.map__hint {
+    padding: 20px;
+    min-height: 55px;
+    min-width: 195px;
+    font-size: 20px;
+	line-height: 1;
+	color: #ffffff;
+    background-color: #f9b43b;
+	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+	border-radius: 20px;
+}
+
+.map__balloon {
+	padding: 20px;
+	font-size: 30px;
+	line-height: 1;
+	color: #ffffff;
+	background-color: #f9b43b;
+	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+	border-radius: 20px;
+}
+
+.map__burger-img {
+	float: right;
+	height: 100px;
+	width: 100px;
 }
 
 .footer{

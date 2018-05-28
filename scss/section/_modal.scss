@@ -1,0 +1,45 @@
+.modal{
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    align-items: center;
+    background: rgba($color: #000, $alpha: 0.8);
+    overflow: hidden;
+    color: #fff;
+    border-radius: 8px;
+    display: none;
+}
+
+.full-review {
+	padding: rem(25px) rem(20px);
+}
+
+
+.full-review__title {
+	font-family: 'Gagalin';
+	font-size: rem(20px);
+	text-transform: uppercase;
+	margin-bottom: rem(25px);
+}
+
+.full-review__content {
+    font-size: rem(14px);
+    font-family: 'Ubuntu';
+}
+
+.full-review__close {
+	width: rem(15px);
+	height: rem(15px);
+	display: block;
+	position: absolute;
+	right: rem(20px);
+	top: rem(20px);
+	opacity: .7;
+    transition: .3s;
+    text-decoration: none;
+    color: #fff;
+	&:hover {
+		opacity: 1;
+	}
+}

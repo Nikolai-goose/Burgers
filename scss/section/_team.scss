@@ -52,6 +52,7 @@
     background: transparent;
     border: none;
     padding: 0;
+    cursor: pointer;
 
     @include tablets{
         text-align: center;
@@ -64,10 +65,15 @@
     color: white;
     font-weight: 400;
     font-size: 14px;
+    transition: all 0.3s;
 
     @include tablets{
         font-size: rem(24px);
     }
+}
+
+.team__accordeon__active .team__accordeon__title{
+    color: $yellow;
 }
 
 .team__accordeon__content{
@@ -81,6 +87,7 @@
     height: 0px;
     margin-bottom: rem(20px);
     margin-left: rem(20px);
+    transition: all 0.3s;
     
     @include tablets{
         flex-wrap: nowrap;
@@ -90,7 +97,7 @@
 
 }
 
-.team__accordeon__active{
+.team__accordeon__active .team__accordeon__content{
     height: rem(100px);
 
     @include tablets{
@@ -102,10 +109,16 @@
     width: 100px;
     height: 100px;
     margin-right: 21px;
+    opacity: 0;
+    transition: all 0.3s;
 
     @include tablets{
         margin: 0;
     }
+}
+
+.team__accordeon__active .team__accoredeon__content--img{
+    opacity: 1;
 }
 
 .team__accordeon__content--title{

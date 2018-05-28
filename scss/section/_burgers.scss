@@ -15,11 +15,14 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .burgers__list-item{
     height: 100%;
+    min-height: rem(620px);
+    width: 100%;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -36,6 +39,9 @@
 }
 
 .burgers__col{
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
     flex-basis: 50%;
     height: 100%;
     display: flex;
@@ -148,7 +154,7 @@
 }
 
 .burgers__about-dropdown{
-    //height: 0;
+    
     width: 0;
     overflow: hidden;
     transition: all 0.5s;
@@ -201,7 +207,7 @@
 
 .burgers__kkal{
    position: absolute;
-   bottom: 0;
+   bottom: rem(10px);
    left: 0;
    width: rem(60px);
    height: rem(75px); 
@@ -251,6 +257,7 @@
     top: 5%;
     bottom: 5%;
     width: rem(24px);
+    z-index: 1;
 }
 
 .burgers__nav-prev{

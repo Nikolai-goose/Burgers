@@ -15,7 +15,7 @@ $(".team__accordeon__btn")
         $(this).parent().removeClass("team__accordeon__active")
        }
        else {
-        $(this).parent().siblings().find('.team__accordeon__item').removeClass('team__accordeon__active');
+        $(this).parent().siblings().removeClass('team__accordeon__active');
         $(this).parent().toggleClass("team__accordeon__active"); 
        }
 
@@ -65,17 +65,28 @@ $(".fixed-menu__link").click(function(){
 /*Fixed-menu*/
 
 /*owl-corusel*/
-let owlCarousel = () =>{
+let owlslider = () =>{
     const burgerCarousel = $(".burgers__list").owlCarousel({
         items: 1,
         nav: true,
         loop: true,
-        navText: ["", ""]
+        navText: ["", ""],
+        navContainer: $[".burgers__control"]
+    });
+
+    $(".burgers__nav__btn-prev").click(function(e){
+        e.preventDefault();
+        burgerCarousel.trigger("prev.owl.carousel");
+    });
+
+    $(".burgers__nav__btn-next").click(function(e){
+        e.preventDefault();
+        burgerCarousel.trigger("next.owl.carousel");
     });
 }   
 
 $(document).ready(function(){
-    $('.burgers__list').owlCarousel();
+    owlslider();
 });
 /*owl-corusel*/
 

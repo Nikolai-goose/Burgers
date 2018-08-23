@@ -2,6 +2,6 @@
 prepros-6.config
 node_modules
 bower_components
-/scss
+./scss
 gulpfile.js
 package-lock.json

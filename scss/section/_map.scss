@@ -1,0 +1,130 @@
+.map{
+    //background-image: url('../img/bg/map-bg.png');
+    background-size: cover;
+    text-align: center;
+    background-position: center center;
+    display: flex;
+    position: relative;
+}
+
+.map-wrapper{
+    height: 100%;
+    min-height: 620px;
+    width: 100%;
+}
+
+.map__hint {
+    padding: 20px;
+    min-height: 55px;
+    min-width: 195px;
+    font-size: 20px;
+	line-height: 1;
+	color: #ffffff;
+    background-color: #f9b43b;
+	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+	border-radius: 20px;
+}
+
+.map__balloon {
+	padding: 20px;
+	font-size: 30px;
+	line-height: 1;
+	color: #ffffff;
+	background-color: #f9b43b;
+	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+	border-radius: 20px;
+}
+
+.map__burger-img {
+	float: right;
+	height: 100px;
+	width: 100px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/bg/footer-bg.png');
+    background-size: cover;
+    text-align: center;
+    background-position: center center;
+    padding: rem(10px) 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include phones {
+      flex-direction: column;
+      margin-bottom: rem(16px);
+    }
+  }
+  
+.footer__col {
+    width: 50%;
+    align-content: flex-start;
+    text-align: left;
+    @include phones {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.footer__address {
+    color: #fff;
+    font-size: rem(14px);
+}
+
+.footer__phone {
+    color: $orange;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: rem(14px);
+
+svg{
+        height: rem(12px);
+    }
+}
+
+.footer__col_right {
+    text-align: right;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.socials {
+    position: relative;
+    top: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.socials__item {
+    margin-left: rem(10px);
+}
+
+.socials__link {
+    display: inline-block;
+    max-width: rem(23px);
+    max-height: rem(20px);
+    transition: .3s;
+    opacity: .3;
+    &:hover {
+        opacity: 1;
+    }
+}
+    
+  
+  .socials__link-icon {
+    width: rem(20px);
+    height: rem(20px);
+    fill: #fff;
+  }

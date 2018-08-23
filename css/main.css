@@ -135,7 +135,7 @@ ul {
   color: #fff; }
 
 .hero {
-  background-image: url("../img/bg/hero-bg.png");
+  background-image: url("./img/bg/hero-bg.png");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;

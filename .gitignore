@@ -1,7 +1,7 @@
 .vscode
 prepros-6.config
-node_modules
-bower_components
-./scss
+/node_modules
+/bower_components
+/scss
 gulpfile.js
 package-lock.json
